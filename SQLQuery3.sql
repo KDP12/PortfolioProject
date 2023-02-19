@@ -1,11 +1,13 @@
+-- Covid Death table
 select * 
 from portfolioproject..coviddeath
 where continent is not null
 order by 3,4
 
---select * 
---from portfolioproject..covidvaccine
---order by 3,4
+--Covid Vaccine table
+select * 
+from portfolioproject..covidvaccine
+order by 3,4
 
 select Location,date,total_cases, new_cases,total_deaths,population
 from portfolioproject..coviddeath
